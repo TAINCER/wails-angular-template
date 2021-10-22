@@ -3,6 +3,8 @@ package main
 import (
 	"context"
 	"fmt"
+
+	"github.com/wailsapp/wails/v2/pkg/runtime"
 )
 
 // App struct
@@ -34,4 +36,17 @@ func (b *App) shutdown(ctx context.Context) {
 // Greet returns a greeting for the given name
 func (b *App) Greet(name string) string {
 	return fmt.Sprintf("Hello %s, It's show time!", name)
+}
+
+// Shows a Dialog
+func (b *App) ShowDialog() {
+	_, err := runtime.MessageDialog(b.ctx, runtime.MessageDialogOptions{
+		Type:    runtime.InfoDialog,
+		Title:   "Native Dialog from Go",
+		Message: "This is a Native Dialog send from Go.",
+	})
+
+	if err != nil {
+		panic(err)
+	}
 }
