@@ -1,15 +1,18 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+
+import { DialogService } from '../../services/dialog.service';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent {
 
-  constructor() { }
+  constructor(private dialogService: DialogService) { }
 
-  ngOnInit(): void {
+  openDialog(): void {
+    this.dialogService.open();
   }
 
 }
