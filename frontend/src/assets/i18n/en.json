@@ -1,0 +1,14 @@
+{
+    "NAV": {
+        "HOME": "Home",
+        "About": "About (Greet)"
+    },
+    "HOME": {
+        "PAGE_FROM": "This is from ",
+        "OPEN_DIALOG": "Open Dialog"
+    },
+    "ABOUT": {
+        "PAGE_FROM": "This is from ",
+        "TYPE_INTO_BOX_NOTICE": "Type into the box and receive a Greet!"
+    }
+}
