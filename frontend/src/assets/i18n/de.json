@@ -1,0 +1,14 @@
+{
+    "NAV": {
+        "HOME": "Startseite",
+        "ABOUT": "Über (Begrüßung)"
+    },
+    "HOME": {
+        "PAGE_FROM": "Dies kommt von ",
+        "OPEN_DIALOG": "Dialog öffnen"
+    },
+    "ABOUT": {
+        "PAGE_FROM": "Dies kommt von ",
+        "TYPE_INTO_BOX_NOTICE": "Tippe etwas in die Box ein und bekomme eine Begrüßung!"
+    }
+}
