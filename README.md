@@ -1,4 +1,6 @@
-![Banner](./banner.png)
+<p align="center">
+ <img src="./banner.png"/>
+</p>
 
 # Introduction
 A template for [Wails beta.13](https://wails.io) with Angular 12. (TypeScript + SASS + Hot Reload)
