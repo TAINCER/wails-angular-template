@@ -1,15 +1,40 @@
-# README
+![Banner](./banner.png)
 
-## About
+# Introduction
+A template for [Wails beta.13](https://wails.io) with Angular 12. (TypeScript + SASS + Hot Reload)
 
-This template uses vanilla JS / HTML and CSS.
+Current Versions:
+ - Angular 12.2.0
+ - Wails beta.13 or newer
 
-## Live Development
+# Getting Started
+## Prerequisites
+ - Node 14+ with npm
+ - Wails CLI beta.13 or newer | (https://wails.io/docs/gettingstarted/installation)
+ - Angular CLI | Install with `npm i -g @angular/cli`
 
-To run in live development mode, run `wails dev` in the project directory. The frontend dev server will run
-on http://localhost:34115. Open this in your browser to connect to your application.
+## Creating the Projekt
+Create a new Application with the Wails CLI and this template:
+```
+wails init -n projektname -t https://github.com/TAINCER/wails-angular-template
+```
 
-## Building
+## Running the Application in Developer Mode
+The easiest way is to use the Wails CLI: `wails dev`
 
-For a production build, use `wails build`.
+This should hot refresh when making changes the Frontend and rebuild when making changes in the Go.
 
+## Building the Application for Production
+When building for Production, there are some parts to notice:
+ - Angular is going to use the `frontend/src/environments/environment.prod.ts` when building the frontend.
+ - You should properly change the Icons for your Application in `build/` and `build/windows` (when building for Windows)
+
+Finally, you can build you Application with: `wails build`
+
+# Adding Angular Material
+In order to add Angular Material you can use the build in Angular CLI command:
+```
+cd frontend
+ng add @angular/material
+```
+This will prompt you what theme you want to use, etc.
