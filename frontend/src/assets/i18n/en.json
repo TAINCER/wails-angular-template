@@ -1,7 +1,7 @@
 {
     "NAV": {
         "HOME": "Home",
-        "About": "About (Greet)"
+        "ABOUT": "About (Greet)"
     },
     "HOME": {
         "PAGE_FROM": "This is from ",
