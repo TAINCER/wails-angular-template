@@ -1,0 +1,7 @@
+{
+    "name": "wails-angular-template",
+    "shortname": "angular",
+    "author": "Timm Ortloff <me@tortloff.de>",
+    "description": "A template with Angular",
+    "helpurl": "https://github.com/TAINCER/wails-angular-template"
+}
