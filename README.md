@@ -28,6 +28,7 @@ This should hot refresh when making changes the Frontend and rebuild when making
 When building for Production, there are some parts to notice:
  - Angular is going to use the `frontend/src/environments/environment.prod.ts` when building the frontend.
  - You should properly change the Icons for your Application in `build/` and `build/windows` (when building for Windows)
+ - The Developer Console will not work.
 
 Finally, you can build you Application with: `wails build`
 
