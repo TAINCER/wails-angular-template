@@ -1,8 +1,14 @@
 <nav>
     <ul style="list-style: none;">
-        <li style="float: left; margin-left: 25px;"><a routerLink="/">Home</a></li>
-        <li style="float: left; margin-left: 25px;"><a routerLink="/about">About (Greet)</a></li>
+        <li style="float: left; margin-left: 25px;"><a routerLink="/">{{ 'NAV.HOME' | translate }}</a></li>
+        <li style="float: left; margin-left: 25px;"><a routerLink="/about">{{ 'NAV.ABOUT' | translate }}</a></li>
     </ul>
+    <Label> Language
+        <select (change)="updateLanguage($event)">
+            <option value="en">English</option>
+            <option value="de">Deutsch</option>
+        </select>
+    </Label>
 </nav>
 
 <br>
