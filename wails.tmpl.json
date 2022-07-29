@@ -3,7 +3,8 @@
   "assetdir": "frontend/dist",
   "frontend:build": "npm run build",
   "frontend:install": "npm install",
-  "frontend:dev": "npm run watch",
+  "frontend:dev": "npm run build:dev",
+  "frontend:dev:watcher": "npm run watch",
   "wailsjsdir": "./frontend",
   "outputfilename": "{{.BinaryName}}",
   "Author": {
