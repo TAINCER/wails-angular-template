@@ -6,6 +6,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build --configuration production --output-hashing none",
+    "build:dev": "ng build --configuration development --delete-output-path false --output-hashing none",
     "watch": "ng build --watch --configuration development --delete-output-path false --output-hashing none",
     "test": "ng test"
   },
